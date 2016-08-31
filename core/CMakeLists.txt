@@ -71,8 +71,8 @@ if(NOT EXISTS $ENV{HSA_BUILD_INC_PATH}/hsakmt.h)
   RETURN()
 endif()
 
-if(NOT EXISTS $ENV{HSA_BUILD_LIB_PATH}/libhsakmt.so.1)
-  MESSAGE("-------- ERROR: Environment variable HSA_BUILD_LIB_PATH is not set to point to the location where KFD Thunk library libhsakmt.so.1 could be found.")
+if(NOT EXISTS $ENV{HSA_BUILD_LIB_PATH}/libhsakmt-1.so)
+  MESSAGE("-------- ERROR: Environment variable HSA_BUILD_LIB_PATH is not set to point to the location where KFD Thunk library libhsakmt-1.so could be found.")
   RETURN()
 endif()
 
@@ -154,4 +154,4 @@ add_library(${CORE_RUNTIME_NAME} SHARED ${CORE_SRCS})
 
 set_property(TARGET ${CORE_RUNTIME_NAME} PROPERTY SOVERSION 1 )
 
-target_link_libraries(${CORE_RUNTIME_NAME} hsakmt elf c stdc++ dl pthread rt)
+target_link_libraries(${CORE_RUNTIME_NAME} hsakmt-1 elf c stdc++ dl pthread rt)
