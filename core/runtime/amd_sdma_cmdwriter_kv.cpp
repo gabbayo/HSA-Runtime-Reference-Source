@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <cstring>
+#include <cmath>
 
 namespace amd {
 // SDMA packet for CI device.
