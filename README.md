@@ -1,11 +1,10 @@
 FORK NOTICE
 ===========
-This is a fork of the original repository
-It has a branch called "work-with-upstream" that should always work with the
-upstream versions of amdkfd and hsakmt.
+This is a fork of the original repository.
 
-That branch also includes a "vector copy" sample that should work with this
-library on AMD's Kaveri.
+It has a branch called "work-with-upstream" that should always work with the upstream versions of amdkfd and hsakmt.
+
+That branch also includes a "vector copy" sample that should work with this library on AMD's Kaveri.
 
 Oded
 
