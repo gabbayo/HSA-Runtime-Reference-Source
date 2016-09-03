@@ -33,7 +33,7 @@ vector_copy: $(OBJ_FILES)
 	$(CC) $(LFLAGS) $(OBJ_FILES) -L`pwd` -L/home/ogabbay/trees/HSA-Runtime-Reference-Source/core/release64 -lhsakmt-1 -lhsa-runtime64 -lhsa-runtime-ext64 -o vector_copy
 
 %.o: %.c
-	$(CC) -c -I../include -o $@ $< -std=c99
+	$(CC) -c -I../inc -o $@ $< -std=c99
 
 clean:
 	rm -rf *.o vector_copy
